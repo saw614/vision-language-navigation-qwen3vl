@@ -1,0 +1,37 @@
+# Dataset
+data/
+datasets/
+
+# Large training checkpoints
+checkpoints/*/epoch_*/
+checkpoints/*/checkpoint_*.pt
+checkpoints/checkpoint_*.pt
+*.pt
+*.pth
+*.ckpt
+
+# Keep final LoRA adapter
+!checkpoints/week4_baseline/best/
+!checkpoints/week4_baseline/best/**
+
+# Experiment logs and cache
+wandb/
+logs/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+nohup.out
+.cache/
+
+# Temporary experiments
+test_v2/
+
+# Python environments
+.venv/
+venv/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
